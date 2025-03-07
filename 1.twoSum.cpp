@@ -13,7 +13,7 @@ vector<int> twoSum(vector<int>& nums, int target){
     unordered_map<int, int> m;
     m[abs(nums[0] - target)] = 0;
     for (int i = 1; i < l; i++){
-        cout << "Entered the loop with element = " << nums[i] << endl;
+        //cout << "Entered the loop with element = " << nums[i] << endl;
         //Aproach using absolute value
         //First step: check if the nums[i] is not on the map
         auto it = m.find(abs(nums[i]));
@@ -29,7 +29,7 @@ vector<int> twoSum(vector<int>& nums, int target){
             }
         }else{ //The key does not exist
             m[abs(nums[i] - target)] = i;
-            cout << "Added " << abs(nums[i] - target) << " to the map" << endl;
+            //cout << "Added " << abs(nums[i] - target) << " to the map" << endl;
         }
     }
     //pm(m);
