@@ -1,5 +1,7 @@
 #include <vector>
 #include <queue>
+#include <climits>
+
 using namespace std;
 
 class Solution {
